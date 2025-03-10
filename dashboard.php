@@ -43,6 +43,37 @@
             margin-left: 260px;
             padding: 20px;
         }
+        .playlist-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .playlist {
+            text-align: center;
+        }
+        .playlist img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #1DB954;
+        }
+        .playlist p {
+            margin-top: 10px;
+            color: #fff;
+            font-size: 14px;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #222;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -63,24 +94,28 @@
     <div class="content">
         <h1>Welcome to Liriiko</h1>
         <p>Your personalized music dashboard</p>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card bg-dark text-light p-3">
-                    <h5>Recently Played</h5>
-                    <p>Track your latest songs</p>
-                </div>
+        
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for playlists...">
+        </div>
+        
+        <h2>Your Playlists</h2>
+        <div class="playlist-container">
+            <div class="playlist">
+                <img src="assets/img/b.jpg" alt="Playlist 1">
+                <p>Chill Vibes</p>
             </div>
-            <div class="col-md-4">
-                <div class="card bg-dark text-light p-3">
-                    <h5>Your Playlists</h5>
-                    <p>Access your saved collections</p>
-                </div>
+            <div class="playlist">
+                <img src="assets/img/l.jpg" alt="Playlist 2">
+                <p>Workout Mix</p>
             </div>
-            <div class="col-md-4">
-                <div class="card bg-dark text-light p-3">
-                    <h5>Recommended</h5>
-                    <p>Discover new music</p>
-                </div>
+            <div class="playlist">
+                <img src="assets/img/r.jpg" alt="Playlist 3">
+                <p>Top Hits</p>
+            </div>
+            <div class="playlist">
+                <img src="assets/img/l.jpg" alt="Playlist 4">
+                <p>Old School</p>
             </div>
         </div>
     </div>
